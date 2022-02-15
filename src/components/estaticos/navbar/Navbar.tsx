@@ -1,45 +1,47 @@
-import React from "react";
-import {AppBar, Toolbar, Typography, Box} from '@material-ui/core';
-import Button from '@material-ui/core/Button';
-import IconButton from '@material-ui/core/IconButton';
-import MenuIcon from '@material-ui/icons/Menu';
+import React from 'react';
+import { AppBar, Toolbar, Typography, Box } from '@material-ui/core';
+function Navbar() {
+    return (
+        <>
+            <AppBar position="static">
+                <Toolbar variant="dense">
+                    <Box style={{ cursor: "pointer" }} >
+                        <Typography variant="h5" color="inherit">
+                            Blog Pessoal
+                        </Typography>
+                    </Box>
 
-function Navbar (){
-    return(
-    <>
-      const useStyles = makeStyles((theme) => ({
-  root: {
-    flexGrow: 1,
-  },
-  menuButton: {
-    marginRight: theme.spacing(2),
-  },
-  title: {
-    flexGrow: 1,
-  },
-}));
+                    <Box display="flex" justifyContent="start">
+                        <Box mx={1} style={{ cursor: "pointer" }}>
+                            <Typography variant="h6" color="inherit">
+                                Home
+                            </Typography>
+                        </Box>
+                        <Box mx={1} style={{ cursor: "pointer" }}>
+                            <Typography variant="h6" color="inherit">
+                                Postagens
+                            </Typography>
+                        </Box>
+                        <Box mx={1} style={{ cursor: "pointer" }}>
+                            <Typography variant="h6" color="inherit">
+                                Temas
+                            </Typography>
+                        </Box>
+                        <Box mx={1} style={{ cursor: "pointer" }}>
+                            <Typography variant="h6" color="inherit">
+                                Cadastrar Tema
+                            </Typography>
+                        </Box>
+                        <Box mx={1} style={{ cursor: "pointer" }}>
+                            <Typography variant="h6" color="inherit">
+                                Logout
+                            </Typography>
+                        </Box>
+                    </Box>
 
-export default function ButtonAppBar() {
-  const classes = useStyles();
-
-  return (
-    <div className={classes.root}>
-      <AppBar position="static">
-        <Toolbar>
-          <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
-            <MenuIcon />
-          </IconButton>
-          <Typography variant="h6" className={classes.title}>
-            News
-          </Typography>
-          <Button color="inherit">Login</Button>
-        </Toolbar>
-      </AppBar>
-    </div>
-  );
-}
-    </>
-
+                </Toolbar>
+            </AppBar>
+        </>
     )
 }
 
