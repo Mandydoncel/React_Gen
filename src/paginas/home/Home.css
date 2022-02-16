@@ -4,10 +4,20 @@
 
 }
 
-.img{
+/*8.img
     width: 800px;
     height: 200px;
     display:block;
     margin: 0 auto;
     
+}*/
+
+.home2{
+    background-image: url("../../assets/fundo2.jpg");
+    background-repeat: no-repeat;
+    width: 100vw;
+    min-height: calc(90vh - 64px);
+
+    background-size: cover;
+    background-position: center;
 }
