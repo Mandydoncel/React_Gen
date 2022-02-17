@@ -1,23 +1,24 @@
-.titulo{
-    color:rgb(197, 72, 103);
-    text-align: center;
-
-}
-
-/*8.img
-    width: 800px;
-    height: 200px;
-    display:block;
-    margin: 0 auto;
-    
-}*/
-
 .home2{
-    background-image: url("../../assets/fundo2.jpg");
+    background-image: url("../../assets/caminho.jpg");
     background-repeat: no-repeat;
     width: 100vw;
-    min-height: calc(90vh - 64px);
+    min-height: calc(110vh - 64px);
 
     background-size: cover;
     background-position: center;
+}
+
+.titulo{
+    color: white !important; 
+    font-weight: bold !important; 
+}
+
+.botao{
+     border-color: white !important;
+     background-color: #16062e !important;
+     color: white !important;
+}
+
+.postagens{
+    background-color: white !important;
 }
