@@ -1,0 +1,18 @@
+.imagem2{
+    background-image: url(https://i.imgur.com/d8gABJi.jpg);
+    background-repeat: no-repeat; 
+    width: 100vh;
+    min-height: 100vh; 
+    background-size: cover;
+     background-position: center;
+}
+
+.textos2{
+    font-weight: bold !important;
+    color: #5e0d4c !important ;
+}
+
+.botaoCancelar{
+    margin-left: 20px !important;
+    
+}

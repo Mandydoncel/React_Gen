@@ -5,6 +5,7 @@ import Footer from './components/estaticos/footer/Footer';
 import {Grid} from '@material-ui/core';
 import Home from './paginas/home/Home';
 import Login from './paginas/login/Login'
+import CadastroUsuario from './paginas/cadastroUsuario/CadastroUsuario';
 import './App.css';
 
 
@@ -22,9 +23,13 @@ function App() {
               <Login />
             </Route>
 
-            <Route path='/home'>
-              <Home />
-            </Route>
+          <Route path='/home'>
+               <Home />
+          </Route>
+
+          <Route path='/cadastrousuario'>
+              <CadastroUsuario />
+          </Route>
           </div>
         </Switch> 
       <Footer />  

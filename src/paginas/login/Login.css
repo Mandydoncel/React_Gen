@@ -15,3 +15,9 @@
     background-size: cover;
      background-position: center;
 }
+
+.botao2{
+    border-color: white !important;
+    background-color: #16062e !important;
+    color: white !important;
+}
