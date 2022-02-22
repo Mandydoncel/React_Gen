@@ -29,6 +29,7 @@ function CadastroUsuario() {
     useEffect(() => {
         if (userResult.id != 0) {
             history.push("/login")
+            console.log(userResult)
         }
     }, [userResult])
 
@@ -48,7 +49,7 @@ function CadastroUsuario() {
     }
     async function onSubmit(e: ChangeEvent<HTMLFormElement>) {
         e.preventDefault()
-        if(confirmarSenha == user.senha){
+        if(confirmarSenha == user.senha && user.senha.length >= 8){
         cadastroUsuario(`/usuarios/cadastrar`, user, setUserResult)
         alert('Usuario cadastrado com sucesso')
         }else{
@@ -81,11 +82,11 @@ function CadastroUsuario() {
                         
                         <Box marginTop={2} textAlign='center'>
                             <Link to='/login' className='text-decorator-none'>
-                                <Button variant='contained' color='secondary' className='btnCancelar'>
+                                <Button variant='contained' className='botaoCancelar'>
                                     Cancelar
                                 </Button>
                             </Link>
-                            <Button type='submit' variant='contained' color='primary'>
+                            <Button type='submit' variant='contained' className='textos2'>
                                     Cadastrar
                             </Button>
                         </Box>

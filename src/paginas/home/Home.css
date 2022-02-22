@@ -11,6 +11,8 @@
 .titulo{
     color: white !important; 
     font-weight: bold !important; 
+    font-family: FreeMono, monospace;
+    
 }
 
 .botao{
@@ -22,3 +24,4 @@
 .postagens{
     background-color: white !important;
 }
+
