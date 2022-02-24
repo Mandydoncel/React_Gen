@@ -66,19 +66,19 @@ function CadastroUsuario() {
                         
                         <TextField value={user.nome} 
                         onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} 
-                        id='nome' label='nome' variant='outlined' name='nome' margin='normal' fullWidth />
+                        id='nome' label='nome' variant='outlined' name='nome' margin='normal' fullWidth required/>
                         
                         <TextField value={user.usuario} 
                         onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)}
-                        id='usuario' label='usuario' variant='outlined' name='usuario' margin='normal'fullWidth />
+                        id='usuario' label='usuario' variant='outlined' name='usuario' margin='normal'fullWidth required/>
                         
                         <TextField value={user.senha} 
                         onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)}
-                        id='senha' label='senha' variant='outlined' name='senha' margin='normal' type='password' fullWidth />
+                        id='senha' label='senha' variant='outlined' name='senha' margin='normal' type='password' fullWidth required/>
                         
                         <TextField value={confirmarSenha} 
                         onChange={(e: ChangeEvent<HTMLInputElement>) => confirmarSenhaHandle(e)}
-                        id='confirmarSenha' label='confirmarSenha' variant='outlined' name='confirmarSenha' margin='normal' type='password' fullWidth />
+                        id='confirmarSenha' label='confirmarSenha' variant='outlined' name='confirmarSenha' margin='normal' type='password' fullWidth  required/>
                         
                         <Box marginTop={2} textAlign='center'>
                             <Link to='/login' className='text-decorator-none'>
