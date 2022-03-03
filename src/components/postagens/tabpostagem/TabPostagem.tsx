@@ -16,18 +16,24 @@ function TabPostagem() {
             <TabContext value={value}>
                 <AppBar position="static">
                     <Tabs centered className='menu' onChange={handleChange}>
-                        <Tab label="Todas as postagens" value="1"/>
-                        <Tab label="Sobre nós" value="2" />
+                        <Tab className='letra' label="Todas as postagens" value="1"/>
+                        <Tab className='letra' label="Sobre nós" value="2" />
                     </Tabs>
                 </AppBar>
-                <TabPanel value="1">
+                <TabPanel value="1" className="bgcolor">
                     <Box display="flex" flexWrap="wrap" justifyContent="center">
                         <ListaPostagem />
                     </Box>
                 </TabPanel>
-                <TabPanel value="2">
+                <TabPanel className='titulo1' value="2">
                     <Typography variant="h5" gutterBottom color="textPrimary" component="h5" align="center" className="titulo">Sobre nós</Typography>
-                    <Typography variant="body1" gutterBottom color="textPrimary" align="justify"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit sed voluptatem inventore aliquid totam laudantium consectetur obcaecati officiis velit eveniet provident non voluptas tempore maxime quam minima quo, reprehenderit eaque!</Typography>
+                    <Typography variant="body1" gutterBottom color="textPrimary" align="center" className="titulo2"> 
+                    Olá, eu sou a Amanda! 
+                    <p>Eu sou uma carioca com o coração paulista. Tenho 30 anos e meu maior hobby é viajar! </p>
+                    <p>Eu vim de uma família bem dividida geograficamente. Raramente estamos todos no mesmo lugar, ou até mesmo na mesma cidade.</p>
+                    <p>Minha vontade é passar para todos as experiências que eu já tive com viagens e dar dicas de como sair de algumas enrascadas. Espero que gostem!</p>
+
+                    </Typography>
                 </TabPanel>
             </TabContext>
         </>

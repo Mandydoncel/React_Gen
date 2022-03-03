@@ -5,6 +5,9 @@
 
 .textos1{
     font-weight: bold !important;
+    color: #5e0d4c !important ;
+    
+        
 }
 
 .imagem{
@@ -13,11 +16,15 @@
     width: 100vh;
     min-height: 100vh; 
     background-size: cover;
-     background-position: center;
+    background-position: center;
+    
 }
 
 .botao2{
     border-color: white !important;
     background-color: #16062e !important;
     color: white !important;
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 0 02px #fff, 0 0 05px #fff, 0 0 05px #23053f, 0 0 10px #23053f, 0 0 15px #23053f, 0 0 20px #23053f, 0 0 25px #23053f;
 }

@@ -6,11 +6,15 @@ import { Box, Card, CardActions, CardContent, Button, Typography } from '@materi
 import './ListaPostagem.css';
 import useLocalStorage from 'react-use-localstorage';
 import { useHistory } from 'react-router-dom'
+import { useSelector } from 'react-redux';
+import { TokenState } from '../../../store/tokens/tokensReducer';
 
 function ListaPostagem() {
   const [posts, setPosts] = useState<Postagem[]>([]);
-  const [token, setToken] = useLocalStorage("token");
   let history = useHistory();
+  const token= useSelector<TokenState, TokenState["tokens"]>(
+    (state) => state.tokens
+  );
 
   useEffect(() => {
     if ((token=='')) {
@@ -36,9 +40,9 @@ function ListaPostagem() {
     {
       posts.map(post =>(
       <Box m={2}>
-        <Card variant="outlined">
+        <Card variant="outlined" className='fundo'>
           <CardContent>
-            <Typography color="textSecondary" gutterBottom>
+            <Typography gutterBottom >
               Postagens
             </Typography>
             <Typography variant="h5" component="h2">
@@ -52,7 +56,7 @@ function ListaPostagem() {
             </Typography>
           </CardContent>
           <CardActions>
-            <Box display="flex" justifyContent="center" mb={1.5}>
+            <Box display="flex" justifyContent="center" mb={1.5} >
               <Link to={`/formularioPostagem/${post.id}`} className="text-decorator-none">
                 <Box mx={1}>
                   <Button

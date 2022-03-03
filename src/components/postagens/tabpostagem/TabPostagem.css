@@ -1,5 +1,6 @@
 .titulo{
     font-weight: bold;
+    color: white !important;
     
 }
 
@@ -9,3 +10,27 @@
 
 }
 
+.bgcolor{
+    background-color: #39093d !important;
+}
+
+.letra{
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 0 02px #fff, 0 0 05px #fff, 0 0 05px #23053f, 0 0 10px #23053f, 0 0 15px #23053f, 0 0 20px #23053f, 0 0 25px #23053f;
+}
+
+
+.titulo1{
+    font-weight: bold;
+    color: black !important;
+    background-color: #39093d !important;
+    
+}
+
+.titulo2{
+    font-weight: bold;
+    color: white !important;
+    font-size: 15px !important; 
+    
+}
