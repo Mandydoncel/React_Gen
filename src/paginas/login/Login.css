@@ -28,3 +28,8 @@
     text-align: center;
     text-shadow: 0 0 02px #fff, 0 0 05px #fff, 0 0 05px #23053f, 0 0 10px #23053f, 0 0 15px #23053f, 0 0 20px #23053f, 0 0 25px #23053f;
 }
+
+.cadastro{
+        border-color: white !important;
+        color: #16062e !important;
+    }

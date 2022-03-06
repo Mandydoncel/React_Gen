@@ -28,10 +28,11 @@ function TabPostagem() {
                 <TabPanel className='titulo1' value="2">
                     <Typography variant="h5" gutterBottom color="textPrimary" component="h5" align="center" className="titulo">Sobre nós</Typography>
                     <Typography variant="body1" gutterBottom color="textPrimary" align="center" className="titulo2"> 
-                    Olá, eu sou a Amanda! 
+                    Olá, eu sou a Mandy! 
                     <p>Eu sou uma carioca com o coração paulista. Tenho 30 anos e meu maior hobby é viajar! </p>
-                    <p>Eu vim de uma família bem dividida geograficamente. Raramente estamos todos no mesmo lugar, ou até mesmo na mesma cidade.</p>
-                    <p>Minha vontade é passar para todos as experiências que eu já tive com viagens e dar dicas de como sair de algumas enrascadas. Espero que gostem!</p>
+                    <p>Eu vim de uma família bem dividida geograficamente, e por isso raramente estamos todos no mesmo lugar, ou até mesmo na mesma cidade.</p>
+                    <p>Minha vontade é passar para todos as experiências que eu já tive com viagens e dar dicas de como sair de algumas enrascadas.</p>
+                    <p>Bem-vindos ao meu mundo! Espero que gostem! :)</p>
 
                     </Typography>
                 </TabPanel>

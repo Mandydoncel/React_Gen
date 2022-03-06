@@ -6,3 +6,15 @@
     background: linear-gradient(36deg, #16062e 30%, #5e0d4c 88%)!important;
     color:white !important;
 }
+
+.bt4{
+    border-color: white !important;
+    background-color: #570c44 !important;
+    color: white !important;
+}
+
+.bt5{
+    border-color: white !important;
+    background-color: #ffffff !important;
+    color: #16062e !important;
+}

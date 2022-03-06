@@ -110,13 +110,9 @@ function Login(){
                             <Typography variant='subtitle1' gutterBottom align='center'>Não tem uma conta?</Typography>
                         </Box>
                         <Link to='/cadastrousuario'>
-                            <Typography 
-                            variant='subtitle1' 
-                            gutterBottom align='center' 
-                            style={{fontWeight: 'bold'}}>Cadastre-se
+                            <Typography className='cadastro' variant='subtitle1' gutterBottom align='center' style={{fontWeight: 'bold'}}>Cadastre-se
                             </Typography>
-                        </Link>
-                        
+                        </Link>                        
                     </Box>
                 </Box>
             </Grid>

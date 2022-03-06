@@ -4,7 +4,6 @@ import './DeletarPostagem.css';
 import Postagem from '../../../models/Postagem';
 import { buscaId, deleteId } from '../../../services/Service';
 import { useHistory, useParams } from 'react-router-dom';
-import useLocalStorage from 'react-use-localstorage';
 import { useSelector } from 'react-redux';
 import { TokenState } from '../../../store/tokens/tokensReducer';
 import { toast } from 'react-toastify';
@@ -91,12 +90,12 @@ function DeletarPostagem() {
           <CardActions>
             <Box display="flex" justifyContent="start" ml={1.0} mb={2} >
               <Box mx={2}>
-              <Button  onClick={sim} variant="contained" className="marginLeft" size='large' color="primary">
+              <Button  onClick={sim} variant="contained" className="bt6" size='large' >
                 Sim
               </Button>
               </Box>
               <Box>
-              <Button onClick={nao} variant="contained" size='large' color="secondary">
+              <Button onClick={nao} variant="contained" size='large' className="bt7">
                 Não
               </Button>
               </Box>

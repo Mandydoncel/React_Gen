@@ -71,7 +71,7 @@ function ListaPostagem() {
                 <Box mx={1}>
                   <Button
                     variant="contained"
-                    className="marginLeft"
+                    className="bt3"
                     size="small"
                     color="primary"
                   >
@@ -83,9 +83,9 @@ function ListaPostagem() {
                 <Box mx={1}>
                   <Button
                     variant="contained"
-                    className="marginLeft"
+                    
                     size="small"
-                    color="secondary"
+                    className='bt2'
                   >
                     deletar
                   </Button>

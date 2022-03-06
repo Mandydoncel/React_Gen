@@ -1,3 +1,9 @@
 .topo{
     margin-top: 20px;
 }
+
+.botao2{
+    border-color: white !important;
+    background-color: #16062e !important;
+    color: white !important;
+}
