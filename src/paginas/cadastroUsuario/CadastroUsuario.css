@@ -1,5 +1,5 @@
 .imagem2{
-    background-image: url(https://i.imgur.com/pxmMwsI.jpg);
+    background-image: url('../../assets/wall.jpg');
     background-repeat: no-repeat; 
     width: 100vh;
     min-height: 100vh; 
